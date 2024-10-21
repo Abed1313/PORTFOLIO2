@@ -8,7 +8,6 @@ import {
   DiGit,
   DiCss3,
   DiHtml5,
-  DiPostgresql,
 } from "react-icons/di";
 import { SiCsharp, SiSqlite, SiPostgresql } from "react-icons/si";
 
