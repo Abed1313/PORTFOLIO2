@@ -8,6 +8,7 @@ function Type() {
         strings: [
           "Full-Stack Developer",
           "ASP .NET Core",
+          
         ],
         autoStart: true,
         loop: true,
