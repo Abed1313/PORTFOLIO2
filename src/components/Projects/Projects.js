@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import HomeLinkedIn from "../../Assets/Projects/HomeLinkedIn.PNG";
+import frontend3 from "../../Assets/Projects/frontend3.jpeg";
+import Charging_Management from "../../Assets/Projects/Charging_Management.jpg";
+import Smart_Home from "../../Assets/Projects/Smart_Home.jpeg";
+import AQWorldsPromo from "../../Assets/Projects/AQWorldsPromo.jpg";
+import Red_Triangel from "../../Assets/Projects/Red_Triangel.PNG";
 
 function Projects() {
   return (
@@ -23,68 +23,65 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={Smart_Home}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Smart Home"
+              description="The Smart Home System is designed to manage and automate tasks within a smart home environment. Users, including Admins, Guests, and Providers, can interact with various components such as devices, rooms, access controls, and scenes. The system allows centralized control and monitoring, making home automation accessible and customizable."
+              ghLink="https://github.com/Abed1313/SmartHomeSystem"
+              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Red_Triangel}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Red-Triangle"
+              description="Red Triangle is a React-based web app for buying and renting properties. It allows users to browse listings, filter by location, price, and property type, and view detailed property information. Sellers and agents can list properties, while buyers can schedule viewings and communicate through integrated messaging."
+              ghLink="https://github.com/Red-Triangle-Project"
+              demoLink="https://curious-clafoutis-499a1c.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={AQWorldsPromo}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Adventure-Quest-RPG"
+              description="AdventureQuestRPG is a text-based role-playing game where players control a character named Abood, who battles various monsters and levels up by gaining experience points. The game includes various elements like characters, monsters, battles, items, and different locations for adventures."
+              ghLink="https://github.com/Abed1313/Adventure-Quest-RPG"
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Charging_Management}
+              isBlog={false}
+              title="EV Management"
+              description="The EV Management System API is a robust web application designed to facilitate electric vehicle (EV) management, including user authentication, booking charging stations, managing service requests, and handling user feedback. This API leverages ASP.NET Core, Entity Framework Core, and Microsoft SQL Server."
+              ghLink="https://github.com/LTUCProject/MidProject"            
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={HomeLinkedIn}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Dern-Support"
+              description="The Dern-Support System is a software solution designed for Dern-Support, an IT technical support company. The system manages various business operations such as customer accounts, support requests, repair scheduling, quotes, and stock management. It includes features for managing both individual and business customers, allowing users to submit support requests, receive quotes, and schedule repair jobs."
+              ghLink="https://github.com/Abed1313/Dern-Support-System"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
+          
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={frontend3}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Movie Library"
+              description="The Movie Library project is a web application that allows users to browse the latest movies organized by categories such as genre and popularity. Users can specific movies and view detailed information, including synopses, cast, and ratings. The app includes features for user ratings and reviews, enabling users to share their opinions. Its responsive design ensures accessibility across various devices. The project utilizes React."
+              ghLink="https://github.com/Abed1313/Movies-Library"
             />
           </Col>
         </Row>
